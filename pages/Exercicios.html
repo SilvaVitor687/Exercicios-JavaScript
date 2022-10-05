@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Condicional</title>
+</head>
+    <body>
+        
+    <section >
+
+        <div class="content-aba">
+        <section class=" is-medium">
+            <h1 class="title">JAVASCRIPT - ESSENCIAL</h1>
+            <h1 class="subtitle">Vitor Silva</h1>
+        </section>
+        <progress class="progress" value="35" max="100">15%</progress>
+        </div>
+
+        <a href="/"><i style="color: darkblue; margin: 10px 10px;"  class="fas fa-reply" aria-hidden="true"> Volte para a tela inicial </i></a>
+    </section>
+
+        <div class="border-box">
+            <p class="tag is-info is-medium"> 01 - Escreva um programa em JavaScript que permite salvar as informações de um recruta. As informações a serem salvas são.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">Variáveis</span>
+            <br>
+
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">1º O Primeiro Nome.</strong>
+            <br>
+            <input style="background: white; border:1px solid black;color:darkblue" type="text" name="" id="primeiro">
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">2º O Segundo Nome.</strong>
+            <br>
+            <input style="background: white; border:1px solid black;color:darkblue" type="text" name="" id="segundo">
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">3º O Campo de Estudo.</strong>
+            <br>
+            <input style="background: white; border:1px solid black;color:darkblue" type="text" name="" id="campos">
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">4º O Ano de Nascimento.</strong>
+            <br>
+            <input style="background: white; border:1px solid black;color:darkblue" type="number" name="" id="anonasc">
+            <br>
+            <p class="tag is-white is-medium"> Sendo assim exiba o nome completo do recruta, seu campo de estudo e idade.
+                <div>
+                    <button onclick="recrutas()">
+                        <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                    </button>
+                </div>    
+                <div style="margin:10px 20px;" id="dadosRec"></div>
+                <br>
+            </div>
+            </p><br>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+          
+
+        <div class="border-box">
+            <p class="tag is-info is-medium"> 02 - Escreva um programa  que permita  inserir dois valores numericos e então calcule o resultado das quatros operações básicas.
+            </p><br>
+            <p class="tag is-white is-medium"> Após calcular os resultados o programa deve exibi-los na tela.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">CALCULOS</span>
+            <br>
+
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Primeiro Calculo.</strong>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">2º O Segundo Calculo.</strong>
+            <br>
+            <input style="background: white; border:1px solid black;color:darkblue;width: 80px;" type="number" name="" id="calc1">
+            <input style="background: white; border:1px solid black;color:darkblue;width: 80px;margin-left: 7.5%;" type="number" name="" id="calc2">
+            <br>
+            
+            <div>
+                <button onclick="calculos()">
+                    <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                </button>
+            </div>    
+            <div style="margin:10px 20px;" id="dadosCalc"></div>
+            <br><br>
+        </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <div class="border-box">
+        <p class="tag is-info is-medium"> 03 - Escreva um programa  em JavaScript que permita inserir o nome e a velocidade de dois veiculos e exiba na tela uma mensagem dizendo qual dos dois  é mais rapido. (Ou se forem iguais se for o caso.)
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">VELOCIDADES</span>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Velocidade do Carro Vermelho.</strong> <br>      
+        <input style="background: white; border:1px solid black;color:darkblue;width: 80px;" type="number" name="" id="vel1">
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Velocidade do Carro Azul.</strong>
+        <br>
+        <input style="background: white; border:1px solid black;color:darkblue;width: 80px;" type="number" name="" id="vel2">
+        <br>
+        
+        <div>
+            <button onclick="velozCars()">
+                <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>    
+        <div style="margin:10px 20px;" id="dadosVelocity"></div>
+        <br><br>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <div class="border-box">
+        <p class="tag is-info is-medium"> 04 - Escreva um programa  que permita inserir o nome e o poder de ataque de um personagem, depois o nome e a quantidade de vida. 
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">IF / ELSE</span>          
+        <br>
+        <img src="/img/Mago.png" alt="">
+        <img style="margin-left:50px ;" src="/img/Dragão.png" alt=""><br>
+        <strong style="margin-left: 1.8% ;"  class="tag is-dark is-medium">1º Personagem ?</strong>
+        <strong style="margin-left: 8%;" class="tag is-dark is-medium">2º Personagem ?</strong>
+        <br>   
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="text" id="personagem1">             
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 5%;" type="text"  id="personagem2"> 
+        <br>
+
+        <strong style="margin-left:1.8%;" class="tag is-dark is-medium">Ataque</strong>
+        <strong style="margin-left: 12.8%;" class="tag is-dark is-medium">Ataque</strong><br>
+        <input  style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="number" id="atack1"   >
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 5%;" type="number" id="atack2">
+        <br>
+
+        <strong style="margin-left:1.8%;" class="tag is-dark is-medium">Defesa</strong>
+        <strong style="margin-left: 12.8%;" class="tag is-dark is-medium">Defesa</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="number" id="defend1">
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 5%;" type="number" id="defend2">
+        <br>
+        
+        <strong style="margin-left:1.8%;" class="tag is-dark is-medium">Pontos de Vida</strong>
+        <strong style="margin-left: 8.8%;" class="tag is-dark is-medium">Pontos de Vida</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="number" id="life1">
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 5%;" type="number" id="life2">
+        <br>
+        
+        <strong style="margin-left:1.8%;" class="tag is-dark is-medium">Tem Escudo</strong>
+        <strong style="margin-left: 10.5%;" class="tag is-dark is-medium">Tem Escudo</strong><br>
+        <select style="margin-left:1.8%;" name="" id="esc1">
+            <option value="escudo1">SIM</option>
+            <option value="semescudo1">NÃO</option>
+        </select>
+
+        <select style="margin-left:14.5%; margin-bottom: 25px;" name="" id="esc2">
+            <option value="escudo2">SIM</option>
+            <option value="semescudo2">NÃO</option>
+        </select>
+
+        
+       
+        <div>
+            <button style="margin-left: 1.8%!important"; onclick="personagens()">
+                <h2  class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>    
+        <div style="margin:10px 20px;" id="guerra1"></div><br>
+        <div style="margin:10px 20px;" id="guerra2"></div>
+        <br><br>
+
+    </div>
+
+    <div class="border-box">
+        <p style="padding: 35px;" class="tag is-info is-medium"> 05 - Escreva um programa  em JavaScript que funcione como conversor de medidas. O programa  deverá pedir um valor em metros <br> e então dar opção de escolher para qual  unidade de medida  esse valor  deve ser convertido.
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">SWITCH</span>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Insira um valor em Metros.</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="text" name="" id="valorconvert"><br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Escolha umas das opções abaixo para efetuar o calculo</strong><br>      
+        <select style="margin-left:1.8%; margin-bottom: 25px;" name="" id="conversor">
+            <option value="mil">Milimetro</option>
+            <option value="cen">Centimetro</option>
+            <option value="dec">Decimetro</option>
+            <option value="deca">Decâmetro</option>
+            <option value="hec">Hectômetro</option>
+            <option value="qui">Quilometro</option>
+
+        </select>
+        
+        <div>
+            <button onclick="conversor()">
+                <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>    
+        <div style="margin:10px 20px;" id="dadoConvert"></div>
+        <br><br>
+    </div>
+
+    <div class="border-box">
+        <p style="padding: 35px;" class="tag is-info is-medium"> 06 - Escreva um programa  que peça o nome de um turista e então pergunte se ele ja visitou alguma dessas cidades, e então continue perguntando atá que a resposta seja não. <br> No fim o programa deve exibir o nome do turista e quantas cidades ele visitou.
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">SWITCH/WHILE</span>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Qual o Nome do Turista ?</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="text" name="" id="turist"><br>
+        
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Qual dessas Cidade você Visitou ?</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Rio de Janeiro" id="rj"> Rio de Janeiro<br> 
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Brasilia" id="br"> Brasília<br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Sao Paulo"id="sp"> São Paulo<br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Manaus" id="mao"> Manaus<br> 
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Rio Grande do Sul" id="rs"> Rio Grande do Sul<br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="opt" value="Nenhuma" id="num"> Nehuma<br> 
+
+        
+        
+        <br><br>
+        <div>
+            <button onclick="visit()">
+                <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>
+            
+        <div style="margin:10px 20px;" id="dadosturist"></div>
+        <br><br>
+    </div>
+
+
+
+    <div class="border-box">
+        <p style="padding: 55px;" class="tag is-info is-medium"> 07 - Escreva um programa em javascript que simule um menu interativo com 5 opções diferentes. O programa deverá iniciar mostrando as 5 opções disponíveis, as quatro primeiras não precisam <br> de nenhuma funcionalidade específica, a última opção deve ser a opção “Encerrar”. Ao clicar em alguma das quatro primeiras opções uma mensagem deve ser exibida na tela indicando qual foi <br> a opção escolhida e depois o programa deve exibir novamente o menu com as 5 opções. Isso deve continuar acontecendo até que o usuário escolha a opção “Encerrar”. <br> Ao escolhe-la uma mensagem dizendo que o sistema está sendo encerrado deve ser exibida na tela e então o programa é finalizado.
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">SWITCH/WHILE</span>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">Qual seu animal preferido escolha uma das opções ?</strong><br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="option" value="Gato" id="ga"> Gato<br> 
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="option" value="Cachorro" id="ca"> Cachorro<br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="option" value="Cavalo" id="cv"> Cavalo<br>
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="option" value="Coelho" id="co"> Coelho<br> 
+        <input style="background: white; border:1px solid black;color:darkblue;margin-left: 1.8%;" type="radio" name="option" value="Porquinho da India" id="po"> Porquinho da India<br>
+
+        <div>
+            <button onclick="chosenoptions()">
+                <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>    
+        <div style="margin:10px 20px;" id="resposta"></div>
+        <br><br>
+    </div>
+
+    <div class="border-box">
+        <p style="padding: 55px;" class="tag is-info is-medium"> 08 - Escreva um programa em javascript que comece perguntando pela quantidade inicial de dinheiro disponível e então mostre na tela essa quantidade juntamente com as opções de adicionar e <br>remover dinheiro e uma opção de sair. Ao clicar na opção de adicionar dinheiro o programa deve perguntar pela quantidade a ser adicionada, somar esse valor com a quantidade inicial e então <br> mostrar novamente o menu com a quantidade de dinheiro e as opções. A opção de remover dinheiro deve fazer o mesmo, porém subtraindo o valor. A opção de sair deve encerrar o programa.
+        </p><br>
+        <span style="padding: 15px;" class="tag is-small is-dark">DO/WHILE</span>
+        <br>        
+        <div>
+            <button onclick="addmoney()">
+                <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+            </button>
+        </div>    
+        <div style="margin:10px 20px;" id="resmoney"></div>
+        <br><br>
+    </div>
+
+    <div class="border-box">        
+        
+            <p style="padding: 1.8%;" class="tag is-info is-medium"> 09- Escreva um programa em javascript que seja capaz de calcular a tabuada de um determinado número (de 1 a 20). O programa deve começar pedindo o número a ser usado nos cálculos e então<br>salvar todos os resultados de multiplicações de 1 a 20 usando o número informado dentro de uma variável do tipo string. Depois o programa deve exibir esses resultados e finalizar.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">FOR</span>
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">Insira o numero a ser efetuado a Tabuada.</strong><br>
+            <input style="background: none;border:1px solid black;color:darkblue;" id="multi" type="number">
+            <br>
+            <div>
+                <button style="margin-left: 19px;" onclick="tabuada()"">
+                    <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                </button>
+            </div> 
+            <select style="width: 180px;padding: 15px; margin-left: 19px;" name="" id="select" size="10">
+                <p>Tabuada...</p>
+            </select>
+            <br>
+            <div id="tab"></div>
+        </div>
+        <div class="border-box">        
+        
+            <p style="padding: 3% 1.5%;" class="tag is-info is-medium"> 10- Escreva um programa em javascript que seja capaz de identificar se uma palavra é um palíndromo. Um palíndromo é uma palavra que lida de trás para frente possui as mesmas letras na mesma <br>ordem. O programa deve iniciar pedindo que seja informada uma palavra e então deve exibir uma mensagem dizendo se aquela palavra é ou não um palíndromo. Caso não seja um palíndromo, o <br>programa deve mostrar a palavra lida da esquerda para direita e da direita para esquerda.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">FOR</span>
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">Insira o nome.</strong><br>
+            <input style="background: none;border:1px solid black;color:darkblue;" id="campPalin" type="text">
+            <br>
+            <div>
+                <button style="margin-left: 19px;" onclick="palindromo()"">
+                    <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                </button>
+            </div> 
+            <div style="margin-left:20px;" id="palin"></div>
+        </div>
+
+        <div class="border-box">        
+        
+            <p style="padding: 4% 1.5%;" class="tag is-info is-medium"> 11- Escreva um programa em javascript para simular uma fila de espera em um consultório médico. O programa deve iniciar mostrando na tela um menu interativo contendo a lista de todos os <br>pacientes esperando em ordem mostrando sua posição ao lado do nome (ex.: 1º Matheus, 2º Marcos, etc). O menu também deve permitir escolher entre as opções de “Novo paciente”, para adicionar <br>um novo paciente   ao fim da fila (pedindo o nome do paciente), “Consultar paciente”, que retira o primeiro paciente da fila e mostra na tela o nome do paciente consultado, e “Sair”. O programa só deve   <br>ser encerrado ao escolher  a opção de “Sair”, caso contrário deve voltar ao menu.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">ARRAYS</span>
+            <br>
+            <strong style="margin-left:20px ;" class="tag is-light is-medium">Adicione um novo nome a Lista de Espera.</strong><br>
+            <input style="background: none;border:1px solid black;color:darkblue;" id="campArray" type="text">
+            <br>
+            <div>
+                <button style="margin-left: 19px;" onclick="arrays()"">
+                    <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                </button>
+            </div> 
+            <div style="margin-left:20px;" id="resarr"></div>
+        </div>
+
+        <div class="border-box">        
+        
+            <p style="padding: 4% 1.5%;" class="tag is-info is-medium"> 12- Escreva um programa em javascript para simular um baralho de cartas. O programa deve iniciar mostrando na tela um menu interativo contendo a quantidade de cartas que estão atualmente no<br>baralho e as opções de “Adicionar uma carta”, “Puxar uma carta” e “Sair”. Ao escolher “Adicionar uma carta”, o programa deve perguntar o nome da carta e adicioná-la no topo do baralho. Ao escolher <br>“Puxar uma carta”, o programa deve retirar a carta do topo do baralho e mostrar na tela o nome da carta puxada. O programa só deve ser encerrado ao escolher a opção de “Sair”, <br>caso contrário deve voltar ao menu.
+            </p><br>
+            <span style="padding: 15px;" class="tag is-small is-dark">ARRAYS</span>
+            <br>
+            <!--<strong style="margin-left:20px ;" class="tag is-light is-medium">Adicione um novo nome a Lista de Espera.</strong><br>
+            <input style="background: none;border:1px solid black;color:darkblue;" id="" type="text">-->
+            <br>
+            <div>
+                <button style="margin-left: 19px;" onclick="Carts()"">
+                    <h2 class="tag is-medium is-success">Resultado<i style="font-size: 18px;padding-left: 10px;padding-top: 6px;" class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                </button>
+            </div> 
+            <div style="margin-left:20px;" id="resCart"></div>
+        </div>
+
+
+
+        
+       
+    </body>
+    <script src="https://kit.fontawesome.com/c9af830ec2.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/Exercicios.js"></script>
+ </html>

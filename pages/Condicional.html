@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Condicional</title>
+</head>
+<body>
+
+    <section >
+
+        <div class="content-aba">
+        <section class=" is-medium">
+            <h1 class="title">JAVASCRIPT</h1>
+            <h1 class="subtitle">Vitor Silva</h1>
+        </section>
+        <progress class="progress" value="5" max="100">15%</progress>
+        </div>
+    </section>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 01 - Neste exercicio vamos simular o sistema de navegação de uma nave interagindo com o usuário. O sistema deve conter os seguinte.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">Condicional</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Pergunte o nome do piloto.</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Coloque a velocidade incial da nave  em 0.</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">3º Perguntar a que velocidade ele gostaria de acelerar a nave.</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">4º Pedir  uma confirmação informando que estar indo para velocidade X km/s.</strong>
+        <br><br>
+        <input type="button" value="INICIAR VELOCIDADE" onclick="testCondicional()">
+
+        <div class="res" id="resultCondicional"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 02 - Neste exercicio vamos simular um conversor de distancia espaciais. O objetivo é colocarmos  uma distanica em anos luz e converter para uma unidade desejada.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">Switch/Case</span>
+        <br><br>
+        <input type="button" value="CALCULAR" onclick="testSwitch()">
+
+        <div class="res" id="resultSwitch"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 03 - Neste exercicio vamos simular o sistema de navegação de uma nave interagindo com o usuário. O sistema deve conter os seguinte passos.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">While</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Qual o nome da nave ?</strong>
+        <br>
+        <input style="background: none;border:1px solid black;color:darkblue;" type="text" name="" id="namenav">
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Perguntar  se o usuarios deseja entrar na dobra</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">3º Perguntar se o usuário deseja executar uma nova dobra. A pergunta deve ser feita até que a resposta seja "NÃO".</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">4º O programa deve informar o nome da nave, o numero de vezes da dobra.</strong>
+        <br><br>
+        <select style="width: 250px; padding: 20px;margin-left: 20px;" name="" id="txtarea" size="10"></select><br><br>
+        <input type="button" value="RESULTADO" onclick="testWhile()">
+
+        
+
+        <div id="resultWhile"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 04 - Neste exercicio utilizaremos o for para construir um ocultador  de nome. Ele deve  percorrer o nome de uma nave  e substituir uma letra  que o usuario  desejar.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">For</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Qual o nome da nave ?</strong>
+        <br>
+        <input style="background: none;border:1px solid black;color:darkblue;" type="text" name="" id="forname">
+        <br><br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Qual caractere deseja substituir ?</strong><br>
+        <input style="background: none;border:1px solid black;color:darkblue;" type="text" name="" id="subnav">
+        <br><br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">3º Por Qual caractere deseja substituir ?</strong><br>
+        <input style="background: none;border:1px solid black;color:darkblue;" type="text" name="" id="subcarac">
+        <br><br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium"> 4º Exiba o resultado abaixo <p style="color: #f5f5f5;">--</p> <i style="color:darkblue;" class="fas fa-arrow-circle-down"></i></strong>
+        <br>
+        <select style="width: 280px; padding: 20px;margin-left: 20px;" name="" id="txtres" size="10"></select><br><br>
+        <input type="button" value="RESULTADO" onclick="testFor()">
+
+        
+
+        <div id="resultfor"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 05- Neste exercicio, vamos criar um programa  de bordo  para nossa nave  que receba  o nome da nave. A velocidade da nave deve ser inicialmente 0.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">Function</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Qual o nome da nave ?</strong>
+        <br>
+        <input style="background: none;border:1px solid black;color:darkblue;" type="text" name="" id="nav">
+        <br><br>
+        <input type="button" value="RESULTADO" onclick="testFunction()">
+
+        
+
+        <div id="functionres"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 06- Neste exercicio, vamos simular um computador de bordo de uma espaçonave no momento em que ele inicia a parada até abrir as comportas para os pilotos saírem.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">High Function</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Passo - Considere que a nave estar a 150 km/h</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Passo - Crie uma função que desacelere 20Km/s a cada segundo. (considere no código que cada interação do laço de repetição é 1 segundo.)</strong>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">4º Passo - Esta função será HOF e também  deve imprimir  cada atualização que houver na velocidade da nave.</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">5º Passo - Ao final, imprima na tela uma mensagem informando que a nave estar parada.</strong>
+        <br>
+        <br><br>
+        <input type="button" value="RESULTADO" onclick="testHigh()">
+
+        
+
+        <div id="highfunctions"></div>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 07- Neste exercicio, vamos simular um computador de bordo de uma espaçonave no momento em que ele inicia a parada até abrir as comportas para os pilotos saírem.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">Arrays</span>
+        <br>
+        <strong style="margin-left:20px; margin-bottom: 10px; border: 1px solid black;padding: 120px  20px;border-radius: 1px;background-color: bisque; color: darkblue;" class="tag is-white is-medium">MODELO DE ARRAY: <br>const hitchedSpaceships = [ <br>
+            ['Fenix', 8, true],<br>
+            ['Golias', 10, true],<br>
+            ['Helmet', 5, false],<br>
+            ['Elemental', 3, true],<br>
+            ['Darwin', 15, false],<br>
+          ];</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Passo - Filtre o nome das Naves com mais  de 9 tripulantes. </strong><br>
+        <input style="background:rgb(54, 52, 52); font-size: 10px;" type="button" value="RESULTADO" onclick="res01()">
+        <div style="margin:5px 20px;padding:10px; border: 1px solid black; width:10%;border-radius:5px;background: bisque;" id="array01"></div>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Passo - Informar  o numero  da plataforma  em que estar  a primeira nave que ainda estar com engate pendente (Utilize a função  findIndex, que é bem parecida com a find).</strong><br>
+        <input style="background:rgb(54, 52, 52);font-size: 10px;" type="button" value="RESULTADO" onclick="res02()">
+        <div style="margin:5px 20px;padding:10px; border: 1px solid black; width:10%;border-radius:5px;background: bisque;" id="array02"></div>
+        <br>
+
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">3º Passo - Destacar o nome de todas as naves para caixa alta. </strong><br>
+        <input style="background:rgb(54, 52, 52);font-size: 10px;" type="button" value="RESULTADO" onclick="res03()">
+        <div style="margin:5px 20px;padding:10px; border: 1px solid black; width:10%;border-radius:5px;background: bisque;" id="array03"></div>
+        <br>
+    </div>
+
+    <div class="border-box">
+        
+        <p class="tag is-info is-medium"> 08- Neste aplicativo, vamos cadastrar uma espaço nave com o seu nome tipo e avelocidade máxima que esta nave pode atingir para que não entre em combustão.
+        </p>
+        <br>
+        <span style="padding: 15px;" class="tag is-small is-dark">Object</span>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">1º Passo - A nave deve partir de 0 Km/s</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">2º Passo - Menu deve ser exibido para o usuário perguntando se ele deseja acelerar ou parar a nave.</strong>
+        <br>
+        <strong style="margin-left:40px ;" class="tag is-white is-medium">* Se ele quiser parar, uma mensagem deve ser exibida  com as características  da nave (nome, tipo) e em que velocidade ele estava.</strong>
+        <br>
+        <strong style="margin-left:40px ;" class="tag is-white is-medium">* Se ele quiser acelerar, deve ser exibida um prompt para que ele  informe  quanto ele quer acelerar e este valor será incrementado na velocidade.</strong>
+        <br>
+        <strong style="margin-left:20px ;" class="tag is-light is-medium">3º Passo - Quando a velocidade for incrementada, deve ser fazer uma verificação para ver  se a espaçonave  está acima  da velocidade  máxima dela.</strong>
+        <br>
+        <strong style="margin-left:40px ;" class="tag is-white is-medium">* Se ela estiver, uma mensagem deve ser exibida informando  a velocidade  da nave  e a velocidade máxima permitida.</strong>
+        <br>
+        <br><br>
+        <input type="button" value="RESULTADO" onclick="testObject()">
+
+        
+
+        <div id="highfunctions"></div>
+    </div>
+
+    
+
+
+        <a href="/"><i style="color: darkblue; margin: 10px 10px;"  class="fas fa-reply" aria-hidden="true"> Volte para a tela inicial </i></a>
+    
+</body>
+    <script src="https://kit.fontawesome.com/c9af830ec2.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/Condicional.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Exercicios React</title>
+</head>
+<body>
+
+    <section >
+
+        <div class="content-aba">
+        <section class=" is-medium">
+            <h1 class="title">DIGITAL HOUSE</h1>
+            <h1 class="subtitle">Vitor Silva</h1>
+        </section>
+        <progress class="progress" value="50" max="100">50%</progress>
+        </div>
+    </section>
+
+    <a href="/"><i style="color: darkblue; margin: 10px 10px;"  class="fas fa-reply" aria-hidden="true"> Volte para a tela inicial </i></a>
+
+    <div class="border-box">
+        
+        <form>
+            <p class="tag is-info is-medium"> 01 - Faça um programa que receba 10 numeros, calcule e imprima a soma dos números pares e a soma dos numeros primos.</p>
+            <br><br>
+            <label for="init"><b>DIGITE UM NUMERO DE 0 A 10</label><br>
+            <input style="background: none;border:1px solid black;color:darkblue;" id="Par" type="number">
+            <br>    
+
+            <select style="width: 200px;padding: 15px; margin-left: 19px;" name="" id="selecion" size="10">
+                <p>Calculos...</p>
+            </select>
+            <br><br>
+            <input type="button" value="INICIAR" onclick="number10()">
+
+            <div id="resultado"></div>
+        </form>
+
+    </div>
+
+    <div class="border-box">
+    <form>
+        <p style="padding: 120px 20px;" class="tag is-info is-medium"> 02 - Uma academia precisa separar grupos de pessoas tendo como 
+            base as suas alturas.Temos um array alunos que contem a altura de cada aluno da academia. 
+            Temos outros 3 arrays: <br> grupoA, grupoB e grupoC. Eles devem ser preenchidos da seguinte forma: <br><br>
+
+            grupoA - Alunos com altura entre 150 a 159 <br>
+            grupoB - Alunos com altura entre 160 a 169 <br>
+            grupoC - Alunos com altura de 170 ou mais <br><br>        
+            
+            Seu trabalho é pegar cada valor do array alunos e colocar o valor correspondente em seu respectivo grupo. <br>
+            Para esse exercício, você precisará usar loops, condicionais e funções de arrays. </p><br><br>
+        <select style="width: 200px;padding: 15px; margin-left: 19px;" name="" id="arr01" size="10">
+            <p>Calculos...</p>
+        </select>
+        <br><br>
+        <input type="button" value="INICIAR" onclick="array_01()">
+
+        <div id="resultado"></div>
+    </form>
+
+</div>
+
+        
+</body>
+
+<script src="https://kit.fontawesome.com/c9af830ec2.js" crossorigin="anonymous"></script>
+<script src="/JavaScript/Digital.js"></script>
+</html>
