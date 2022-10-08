@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/soccer.css">
+    <title>ESCALAÇÃO DE JOGADOR</title>
+</head>
+<body>
+
+    <div>
+        
+        <nav class="menu">
+            <a href=""><img class="logo" src="/img/Logo.png" alt=""></a> 
+            <div class="menu-add">                          
+                <div class="li-opt">
+                                                                 
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div id="teamsList"></div>
+            <div class="clear"></div>            
+        </div>
+
+
+
+
+        <div class="campos-soccer">
+            <section>
+                <label for="">NOME DO JOGADOR</label>
+                <input type="text" name="" id="addCamp">
+            </section>
+            <section>
+                <label for="">POSIÇÃO</label>
+                <input type="text" name="" id="addPos">
+            </section>
+            <section>
+                <label for="">CAMISA</label><br>
+                <input type="number" name="" id="addCam">
+            </section>
+            <button onclick="playerSoccer()">ESCALAR JOGADOR</button>
+            <button onclick="playerRemove()">REMOVER JOGADOR</button> 
+            
+        </div>
+                <div class="voltar"><a href="/pages/Desafios.html"><i style="color: darkblue; margin: 10px 10px;"  
+                class="fas fa-reply" aria-hidden="true"> Volte para a tela inicial </i></a></div>
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/c9af830ec2.js" crossorigin="anonymous"></script>
+<script src="/JavaScript/Soccer.js"></script>
+</html>
